@@ -1,0 +1,129 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comment Box</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #947dab !important;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-family: "Times New Roman", serif;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .container1 {
+            background-color: #b95cf7;
+            width: 500px;
+            padding: 20px;
+            border: 4px dashed white;
+            text-align: center;
+        }
+        .form1 {
+            background-color: #b95cf7;
+            width: 500px;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+            margin: auto;
+            padding: 30px;
+            border: 4px dashed white;
+        }
+        #submit {
+            background-color: #e5f2e1;
+            color: #dbabb6;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        label {
+            font-weight: bold;
+        }
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/028/000/049/non_2x/bullet-train-night-skyscrapers-lo-fi-aesthetic-wallpaper-highrise-buildings-twilight-railway-train-2d-cartoon-cityscape-illustration-purple-lofi-background-90s-retro-album-art-chill-vibes-vector.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid"> 
+            <a class="navbar-brand" href="index.html">
+                <img src="royal.png" width="70" height="70" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Train Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Contact Info</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search...">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br>
+    <center>
+        <div class="container1">
+            <h2><span style="color:#e1f571; font-family: Consolas;">Please Leave A Comment</span></h2>
+        </div>
+        <br><br>
+        <form action="">
+            <div class="form1">
+                <label for="fname">Full Name:</label>
+                <br>
+                <input type="text" id="fname" name="fname" required>
+                <br><br>
+                <label for="lname">Email:</label>
+                <br>
+                <input type="text" id="lname" name="lname" required>
+                <br><br>
+                <label for="age">Age:</label>
+                <br>
+                <input type="number" id="age" name="age" required>
+                <br><br>
+                <label>Are you an:</label>
+                <br>
+                <input type="radio" id="adult" name="user_type" value="adult" required>
+                <label for="adult">Adult</label>
+                <br>
+                <input type="radio" id="child" name="user_type" value="child" required>
+                <label for="child">Child</label>
+                <br><br>
+                <label for="rating">Please Give a Rating</label>
+                <br>
+                <select id="rating" name="rating">
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+                <br><br>
+                <label for="suggestions">Please give some suggestions for future improvements.</label>
+                <br>
+                <textarea id="suggestions" name="suggestions" rows="4" cols="30" placeholder="Type your answer here..."></textarea>
+                <br><br>
+                <input type="submit" id="submit" name="submit" value="Thank you!">
+            </div>
+        </form>
+</body>
+</html>
